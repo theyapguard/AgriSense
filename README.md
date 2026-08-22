@@ -311,14 +311,6 @@ AgriSense puts satellite intelligence in the hands of the people who need it mos
 
 ---
 
-## 👥 Contributors
-
-<a href="https://github.com/theyapguard/AgriSense/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=theyapguard/AgriSense" alt="Contributors" />
-</a>
-
----
-
 ## 📜 License
 
 [MIT](LICENSE) — free to use, learn from, and build on.
