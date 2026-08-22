@@ -1,340 +1,332 @@
-<p align="center">
-  <img src="public/agrisense-logo.svg" alt="AgriSense logo" width="140">
-</p>
+<div align="center">
 
-<h1 align="center">AgriSense</h1>
+<img src="public/agrisense-logo.svg" alt="AgriSense" width="150">
 
-<p align="center">
-  <strong>See your field's future from space.</strong>
-</p>
+# 🌾 AgriSense
 
-<p align="center">
-  Satellite-driven field intelligence. Draw your land, sense its health, and plan your harvest — all in one dashboard.
-</p>
+### See your field's future from space.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/React-18-000000?style=flat-square&logo=react">
-  <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white">
-  <img src="https://img.shields.io/badge/Vite-Build-646CFF?style=flat-square&logo=vite&logoColor=white">
-  <img src="https://img.shields.io/badge/TailwindCSS-Framework-000000?style=flat-square&logo=tailwindcss">
-  <img src="https://img.shields.io/badge/Mapbox-GL_JS-000000?style=flat-square&logo=mapbox">
-  <img src="https://img.shields.io/badge/Supabase-Backend-3ECF8E?style=flat-square&logo=supabase&logoColor=white">
-  <img src="https://img.shields.io/badge/Gemini-2.5_Pro-1A73E8?style=flat-square&logo=google">
-  <img src="https://img.shields.io/badge/Google_Earth_Engine-Sentinel--2-4285F4?style=flat-square&logo=googleearth">
-  <img src="https://img.shields.io/badge/License-MIT-000000?style=flat-square">
-</p>
+**Draw your land. Sense its health. Plan your harvest. All in one place.**
+
+[![NextStep Hacks 2026](https://img.shields.io/badge/NextStep_Hacks_2026-Earth_Forward-D9B84C?style=for-the-badge&labelColor=1C2A24)](https://github.com/theyapguard/AgriSense)
+[![License: MIT](https://img.shields.io/badge/License-MIT-6FC78F?style=for-the-badge&labelColor=1C2A24)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-6FC78F?style=for-the-badge&labelColor=1C2A24)](https://github.com/theyapguard/AgriSense/issues)
+
+<br>
+
+[![React](https://img.shields.io/badge/React_18-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript_5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Vite](https://img.shields.io/badge/Vite_5-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vite.dev)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+[![Mapbox](https://img.shields.io/badge/Mapbox_GL-000000?style=flat-square&logo=mapbox&logoColor=white)](https://www.mapbox.com)
+[![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=black)](https://supabase.com)
+[![Google Earth Engine](https://img.shields.io/badge/Earth_Engine-4285F4?style=flat-square&logo=googleearth&logoColor=white)](https://earthengine.google.com)
+[![Gemini](https://img.shields.io/badge/Gemini_2.5_Pro-1A73E8?style=flat-square&logo=google&logoColor=white)](https://deepmind.google/technologies/gemini)
+[![Sentinel-2](https://img.shields.io/badge/Sentinel--2_10m-6FC78F?style=flat-square&labelColor=1C2A24)](https://sentinels.copernicus.eu)
+
+</div>
 
 ---
 
-## What is AgriSense?
+## 🌍 The Problem
 
-AgriSense is a satellite-powered agricultural and land analytics platform that combines Sentinel-2 satellite imagery, Google Earth Engine processing, real-time weather data, soil science databases, and AI-driven crop planning into a single web dashboard.
+Agriculture feeds the world, yet most farmers still make decisions in the dark.
 
-You draw polygonal regions on an interactive map. AgriSense tells you what's there, how healthy it is, and what to grow next — vegetation health (NDVI), climate analytics, soil profiling, air quality, land use classification, land suitability scoring, and AI-generated crop planning recommendations.
+- 📉 **Yield losses are invisible until it's too late.** Stress, drought, nutrient gaps — by the time you see them on the ground, the season is gone.
+- 🛰️ **Satellite intelligence is locked away.** NDVI, soil data, climate history all exist — but they live in tools built for scientists, not growers.
+- 💸 **Smallholders can't afford agronomists.** 500M+ small farms grow a third of the world's food, and most have no access to expert planning.
+- 🌱 **Climate change is rewriting the rules.** Last year's plan doesn't work this year. Guessing is expensive.
 
-## Preview
+## 💡 Our Solution
 
-> <img src="public/agrisense-preview.png" alt="AgriSense Preview" width="100%">
+**AgriSense turns any phone or laptop into a satellite-powered agronomist.**
 
-## What AgriSense Does
+Draw your field on the map. Within seconds, you get what used to take weeks: vegetation health from orbit, the soil under your feet, the weather above it, and an AI-generated crop plan that tells you **what to plant, where, and when** — with the numbers to back it up.
 
-- Map and manage regions on an interactive satellite map with polygon drawing tools
-- Monitor vegetation health using NDVI analysis from Sentinel-2 10m resolution imagery
-- Access detailed soil health profiling from the ISRIC SoilGrids database
-- Monitor air quality with PM2.5, PM10, and AQI readings
-- Classify land use from ESA WorldCover satellite data via Google Earth Engine
-- AI-based crop planning with visual field layouts, intercropping strategies, and crop rotation plans
-- Compare two regions side-by-side with synchronized analytics charts
-- Export crop plans as PDF documents
+<table>
+<tr>
+<td width="50%">
 
-## Key Features
+### 🎯 What AgriSense does
 
-### Interactive Satellite Mapping
+- 🗺️ Draw fields on a live satellite map
+- 🌿 Read vegetation health (NDVI) from Sentinel-2
+- 🪱 Profile soil — pH, carbon, nitrogen, texture, water retention
+- 🌦️ Pull 12 months of climate history + live air quality
+- 🏞️ Classify land use and score suitability
+- 🤖 Generate an AI crop plan with zones, intercropping, rotation
+- 📄 Export the plan as a PDF
 
-- Satellite and dark basemap styles powered by Mapbox GL JS
-- Polygon drawing with a pen tool for custom region boundaries
-- Region editing and deletion with boundary modification
-- Fly-to animations when selecting regions from the list
-- NDVI overlay from Google Earth Engine tile service
-- Location search with Mapbox geocoding and reverse geocoding
-- Auto-detection of region type (rural vs urban) using GEE land use data
+</td>
+<td width="50%">
 
-### NDVI Vegetation Analysis
+### 🚀 Why it wins
 
-Sentinel-2 imagery is processed through Google Earth Engine to calculate the Normalized Difference Vegetation Index, displayed as a semi-transparent raster layer above the satellite basemap.
+- ⚡ **Instant** — no signup walls, no installs
+- 🆓 **Free to run** — Open-Meteo & SoilGrids need no keys
+- 🌐 **Works anywhere on Earth** — global satellite coverage
+- 🧠 **AI + rules** — a local agronomy engine plus Gemini 2.5 Pro
+- 📱 **Mobile-first** — built for the field, not just the desk
 
+</td>
+</tr>
+</table>
+
+---
+
+## 📸 Demo
+
+> A real walkthrough — a 9.1-acre wheat farm in Lahore, Pakistan.
+
+<table>
+<tr>
+<td width="50%"><img src="public/Screenshot%202026-08-23%201.56.02%20AM.png" alt="Draw your field"></td>
+<td width="50%"><img src="public/Screenshot%202026-08-22%203.12.58%20PM.png" alt="Climate analytics"></td>
+</tr>
+<tr>
+<td align="center"><b>🖊️ Draw your field</b><br>One polygon. That's all it takes.</td>
+<td align="center"><b>🌦️ Climate history, instantly</b><br>Rain, temperature, evapotranspiration — a full year.</td>
+</tr>
+<tr>
+<td width="50%"><img src="public/Screenshot%202026-08-23%201.56.12%20AM.png" alt="Analytics dashboard"></td>
+<td width="50%"><img src="public/Screenshot%202026-08-22%203.13.11%20PM.png" alt="AI crop plan on map"></td>
+</tr>
+<tr>
+<td align="center"><b>📊 Full analytics dashboard</b><br>NDVI, land use, suitability, air & water quality.</td>
+<td align="center"><b>🤖 AI crop plan, on the map</b><br>Every dot is a plant — wheat, tomato, eucalyptus, placed for you.</td>
+</tr>
+<tr>
+<td width="50%"><img src="public/Screenshot%202026-08-23%201.57.09%20AM.png" alt="Zone allocation"></td>
+<td width="50%"><img src="public/Screenshot%202026-08-23%201.57.17%20AM.png" alt="Crop calendar"></td>
+</tr>
+<tr>
+<td align="center"><b>🥧 Zone allocation + impact</b><br>Wheat 35% · Walnut 33% · Maize 32% → 26% water saved, +24% revenue.</td>
+<td align="center"><b>📅 3-season crop calendar + tips</b><br>Spring, summer, autumn/winter — planned with expert advice.</td>
+</tr>
+</table>
+
+---
+
+## ✨ Key Features
+
+### 🛰️ Satellite Field Mapping
+- Interactive Mapbox GL satellite map with polygon drawing
+- Live NDVI overlay from Google Earth Engine
+- Auto-detection of rural vs urban regions
+- Fly-to animations, region search, side-by-side field comparison
+
+### 🌿 NDVI Vegetation Health
+Sentinel-2 imagery processed through GEE into NDVI — the gold standard for crop health.
+
+```
 NDVI = (NIR - Red) / (NIR + Red)
-
-| NDVI Range | Vegetation Status |
-|------------|-------------------|
-| Below 0.2 | Critical / bare soil |
-| 0.2 to 0.4 | Stressed vegetation |
-| 0.4 to 0.6 | Moderate vegetation |
-| Above 0.6 | Healthy vegetation |
-
-### Climate Analytics Dashboard
-
-Per-region weather analysis with current conditions, precipitation trends (incl. evapotranspiration), temperature ranges, soil moisture (surface & deep), and selectable date range. Air quality monitoring with AQI, PM2.5 levels, and color-coded indicators.
-
-### Soil Health Profiling
-
-Soil data fetched from the ISRIC SoilGrids REST API at 250m resolution:
-
-- Soil classification (WRB taxonomy) with descriptions and icons
-- pH measurement with rating
-- Organic carbon content
-- Total nitrogen content
-- Cation exchange capacity (CEC)
-- Bulk density
-- Coarse fragment percentage
-- Soil composition (sand, silt, clay percentages) with USDA texture class
-- Water retention: field capacity, wilting point, available water capacity
-- Donut chart to visualize soil composition
-
-### Land Use Classification
-
-ESA WorldCover 10m land cover classification via Google Earth Engine:
-
-- Cropland, tree cover, grassland, shrubland, built-up, water, bare/sparse, wetland, snow/ice, mangroves, moss/lichen
-- Interactive donut chart with percentage breakdown
-- Used for urban region detection (30%+ built-up area triggers urban mode)
-- Water body edge case detection (80%+ water blocks crop planning)
-
-### Land Suitability Scoring
-
-Radar chart of six land suitability metrics:
-
-- Soil quality (from SoilGrids data)
-- Water access (rainfall and soil moisture)
-- Climate suitability (temperature and precipitation patterns)
-- Topography (elevation and slope from SRTM 30m DEM)
-- Drainage assessment
-- Nutrient level scoring
-
-### AI Crop Planning
-
-Dual-approach crop planning system:
-
-**Local Agronomy Model** — a client-side scoring engine with 50+ crop profiles that runs immediately:
-
-- Detects climate region from location text
-- Scores each crop against field signals: temperature, rainfall, soil pH, NDVI health, water index, humidity, topography
-- Allocates area proportionally to suitability scores
-- Generates intercropping pairs and 3-season rotation plans
-
-**Planner (Background)** — calls Google Gemini 2.5 Pro with full field context; the AI response replaces the local model when available.
-
-**Crop Visualization**
-
-- Satellite minimap showing the field boundary on Mapbox satellite imagery
-- Static dot grid fills the field polygon with crop markers using point-in-polygon testing
-- Color-coded legend with crop filtering (click to show/hide individual crops)
-
-**Plan Outputs**
-
-- Zone allocation pie chart with percentage breakdown
-- Per-zone details: area percentage, spacing, water needs, yield estimate, season, reasoning
-- Intercropping pair suggestions with spacing guidance
-- 3-season crop rotation plan with current season highlighted
-- Water saving percentage and revenue boost estimates
-- PDF export of the complete crop plan
-
-### Edge Case Detection
-
-AgriSense detects unsuitable regions and blocks crop planning:
-
-| Edge Case | Detection Method | Threshold |
-|-----------|-----------------|-----------|
-| Water bodies | ESA WorldCover "Water" land use percentage | 80% or more |
-| Extreme deserts | Annual rainfall from CHIRPS via GEE | Below 50mm, or keyword match (Sahara, Atacama, etc.) |
-| Polar regions | Average latitude of polygon coordinates | Above 66 degrees, or keyword match (Antarctica, etc.) |
-| High altitude | Elevation from SRTM via GEE | Above 5000m |
-| Urban regions | ESA WorldCover "Built-up" percentage | 30% or more (switches to urban analytics mode) |
-
-### Region Comparison
-
-- Side-by-side comparison of two regions with synchronized charts
-- Selectable comparison target from existing regions
-- Independent chart rendering per region
-
-## Architecture
-
-```
-User / Browser
-      │
-      ▼
-   Frontend
-React + Mapbox GL JS + Tailwind + shadcn
-      │
-      ▼
-Edge Functions (Supabase - Deno)
-      │
- ┌───────────────┬───────────────┬──────────────┬──────────────┬─────────────┬─────────────┐
- ▼               ▼               ▼               ▼              ▼             ▼
-Mapbox Token   Field Analysis   Land Analytics  NDVI Tiles     NDVI Series   Soil Data
-(Mapbox API)   (GEE + AI)       (GEE)           (GEE)          (GEE)         (SoilGrids)
-      │
-      ▼
-External Data Sources
-      │
- ┌───────────────┬───────────────┬───────────────┬───────────────┐
- ▼               ▼               ▼               ▼               ▼
-Google Earth    Open-Meteo     SoilGrids       Mapbox         Sentinel-2
-Engine          (Weather)      (Soil Data)     (Maps API)    ESA WorldCover
-                                                             SRTM • CHIRPS
 ```
 
-## Tech Stack
+| NDVI | Meaning | Status |
+|-----:|---------|:------:|
+| `< 0.2` | Bare soil / critical | 🔴 |
+| `0.2 – 0.4` | Stressed | 🟠 |
+| `0.4 – 0.6` | Moderate | 🟡 |
+| `> 0.6` | Healthy | 🟢 |
 
-| Layer | Technology | Purpose |
-|-------|-----------|---------|
-| Frontend | React 18 + TypeScript 5 | UI framework with type safety |
-| Build Tool | Vite 5 | Development server and production bundling |
-| Styling | Tailwind CSS 3 + shadcn/ui (Radix primitives) | Utility-first CSS with accessible component library |
-| Mapping | Mapbox GL JS 3 | Interactive 3D satellite map rendering |
-| Charts | Recharts | Data visualization (area, bar, line, pie, radar charts) |
-| Routing | React Router 6 | Client-side SPA navigation |
-| Server State | TanStack React Query 5 | Async data fetching and caching |
-| Backend | Supabase Edge Functions (Deno) | Serverless API endpoints |
-| Satellite | Google Earth Engine | Sentinel-2 NDVI, ESA WorldCover, SRTM, CHIRPS |
-| AI | Google Gemini 2.5 Pro | Crop planning and field analysis |
-| Weather | Open-Meteo | Current forecast, historical archive, air quality |
-| Soil | ISRIC SoilGrids | Soil properties (pH, carbon, nitrogen, texture) |
-| PDF | jsPDF | Client-side PDF export of crop plans |
-| Animations | tailwindcss-animate | UI transition animations |
+### 🪱 Soil Science (ISRIC SoilGrids, 250m)
+Full pedological profile: pH, organic carbon, nitrogen, CEC, bulk density, sand/silt/clay texture, field capacity, wilting point — visualized.
 
-## Data Sources and APIs
+### 🏞️ Land Use + Suitability
+ESA WorldCover 10m classification + a 6-axis suitability radar: soil, water, climate, topography, drainage, nutrients.
 
-### Satellite and Earth Observation
+### 🤖 AI Crop Planning
+- **Local agronomy engine** — 50+ crop profiles scored against your field's signals, instantly.
+- **Gemini 2.5 Pro planner** — full-field context, native-plant enforcement, zone allocation, intercropping, rotation, expert tips.
+- **Visual plan** — every crop is a dot on your real field. Trees get bigger dots. Filter by crop.
 
-| Source | Resolution | Data Provided | Usage |
-|--------|-----------|---------------|-------|
-| Sentinel-2 (via GEE) | 10m multispectral | NIR and Red bands | NDVI vegetation health analysis |
-| ESA WorldCover (via GEE) | 10m land cover | 11 land cover classes | Land use classification, urban/water detection |
-| SRTM (via GEE) | 30m elevation | Digital elevation model | Elevation, slope, topography scoring |
-| CHIRPS (via GEE) | 5km rainfall | Daily rainfall estimates | Annual precipitation for suitability analysis |
+### 🛡️ Smart Edge-Case Detection
+We don't plan crops on a lake. Or a glacier.
 
-### Weather and Climate
+| Blocked when | Threshold |
+|--------------|-----------|
+| 🌊 Water bodies | ≥ 80% water (WorldCover) |
+| 🏜️ Extreme desert | < 50mm annual rain (CHIRPS) |
+| ❄️ Polar | > 66° latitude |
+| ⛰️ High altitude | > 5000m elevation |
+| 🏙️ Urban | ≥ 30% built-up → switches to urban mode |
 
-| Source | Endpoint | Data Provided | Usage |
-|--------|----------|---------------|-------|
-| Open-Meteo Forecast API | /v1/forecast | Current temperature, humidity, wind, weather code, feels-like, soil moisture | Real-time conditions and soil moisture display |
-| Open-Meteo Archive API | /v1/archive | Historical daily precipitation, temperature range, evapotranspiration, soil moisture | Climate analytics charts with configurable date range |
-| Open-Meteo Air Quality API | /v1/air-quality | PM2.5, PM10, European AQI, US AQI | Air quality monitoring cards |
+---
 
-### Soil Science
+## 🏗️ Architecture
 
-| Source | Endpoint | Data Provided | Usage |
-|--------|----------|---------------|-------|
-| ISRIC SoilGrids | REST API at 250m resolution | pH, organic carbon, nitrogen, bulk density, CEC, sand/silt/clay texture, coarse fragments, water retention | Soil health profiling, texture pie chart, crop suitability input |
+```mermaid
+flowchart TD
+    U["👨‍🌾 You<br>browser / mobile"] --> FE
 
-### Mapping and Geocoding
+    subgraph FE["🖥️ Frontend — React 18 + TypeScript"]
+        MAP["🗺️ Mapbox GL<br>satellite map + drawing"]
+        UI["📊 Dashboard<br>Recharts · Tailwind · shadcn"]
+        LOCAL["🧠 Local Agronomy Engine<br>50+ crop profiles"]
+    end
 
-| Source | Data Provided | Usage |
-|--------|---------------|-------|
-| Mapbox GL JS | Vector and satellite tile rendering | Interactive map with satellite basemap |
-| Mapbox Geocoding API | Forward and reverse geocoding | Location search bar, auto-detection of region location |
+    FE --> SB
 
-### AI
+    subgraph SB["⚡ Supabase Edge Functions — Deno"]
+        A1["analyze-field"]
+        A2["gee-analytics"]
+        A3["ndvi-timeseries"]
+        A4["soil-data"]
+        A5["crop-planning"]
+        A6["gee-ndvi-tiles"]
+        A7["get-mapbox-token"]
+    end
 
-| Source | Model | Usage |
-|--------|-------|-------|
-| Google Gemini 2.5 Pro | Large language model | Crop planning with native plant enforcement, field analysis, region-specific recommendations |
+    SB --> EXT
 
-## Edge Functions
+    subgraph EXT["🌐 Data & AI"]
+        GEE["🛰️ Google Earth Engine<br>Sentinel-2 · WorldCover · SRTM · CHIRPS"]
+        GM["🤖 Gemini 2.5 Pro<br>AI crop planner"]
+        OM["🌦️ Open-Meteo<br>weather + air quality"]
+        SG["🪱 ISRIC SoilGrids<br>soil @ 250m"]
+        MB["📍 Mapbox<br>geocoding + tiles"]
+    end
 
-| Function | Method | Input | Output | External Calls |
-|----------|--------|-------|--------|----------------|
-| get-mapbox-token | POST | (none) | { token } | Reads MAPBOX_TOKEN secret |
-| analyze-field | POST | polygon coordinates, field metadata, weather, soil data | NDVI stats + AI analysis text | GEE (Sentinel-2 NDVI), Gemini 2.5 Pro |
-| gee-analytics | POST | polygon, analyses array | land_use, vegetation, suitability objects | Google Earth Engine (WorldCover, Sentinel-2, SRTM, CHIRPS) |
-| gee-ndvi-tiles | POST | polygon, date | Tile URL template | Google Earth Engine |
-| ndvi-timeseries | POST | polygon | 90-day NDVI array, growth stage, growth rate, canopy cover, biomass | Google Earth Engine (Sentinel-2) |
-| soil-data | POST | lat, lon | classification, metrics, texture, water_retention | ISRIC SoilGrids REST API |
-| crop-planning | POST | field name, crop, area, location, coordinates, NDVI/soil/weather/suitability data | zones, intercropping, rotation_plan, summary, tips, scores | Gemini 2.5 Pro |
-| keepalive | GET | (none) | { status: "ok" } | (none) |
-
-## Project Structure
-
-```
-src/
-├── components/
-│   ├── MapView.tsx              # Main map with drawing, NDVI overlay, field rendering
-│   ├── MapToolbar.tsx           # Left toolbar (zoom, draw, layers, NDVI, compass)
-│   ├── SidePanel.tsx            # Right sidebar with field list & detail view
-│   ├── FieldDetailView.tsx      # Per-field detail: weather, NDVI, soil, AI analysis
-│   ├── FieldCard.tsx            # Compact field card for lists
-│   ├── FieldEditDialog.tsx      # Edit field name, crop, color, group
-│   ├── FieldComparisonColumn.tsx# Side-by-side field comparison charts
-│   ├── WeatherView.tsx          # Full analytics dashboard
-│   ├── CropPlanningSection.tsx  # AI crop planning with map visualization
-│   ├── NewFieldDialog.tsx       # Create new field from drawn polygon
-│   ├── SearchBar.tsx            # Map search with geocoding
-│   ├── LocationAutocomplete.tsx # Location input with Mapbox suggestions
-│   ├── NdviLegend.tsx           # NDVI color scale legend
-│   ├── NdviScrubber.tsx         # NDVI date navigation
-│   ├── MobileBottomNav.tsx      # Mobile tab bar
-│   ├── MobileFieldSheet.tsx     # Mobile field list overlay
-│   ├── MobileDrawPrompt.tsx     # Mobile draw mode controls
-│   └── ui/                     # shadcn/ui components
-├── data/
-│   ├── fields.ts               # Field type definition & helpers
-│   └── crops.ts                # Crop options for field creation
-├── hooks/
-│   ├── use-mobile.tsx           # Responsive breakpoint hook (768px)
-│   ├── use-swipe.ts             # Touch swipe gesture detection
-│   └── use-toast.ts             # Toast notification hook
-├── pages/
-│   ├── Index.tsx                # Main page with desktop/mobile layouts
-│   └── NotFound.tsx             # 404 page
-└── integrations/
-    └── supabase/
-        └── client.ts            # Supabase client configuration
-
-supabase/functions/
-├── analyze-field/index.ts       # AI field analysis
-├── crop-planning/index.ts       # AI crop planning (Gemini 2.5 Pro)
-├── gee-analytics/index.ts       # Google Earth Engine analytics
-├── gee-ndvi-tiles/index.ts      # GEE NDVI tile generation
-├── get-mapbox-token/index.ts    # Mapbox token provider
-├── keepalive/index.ts           # Health check
-├── ndvi-timeseries/index.ts     # NDVI time-series data
-└── soil-data/index.ts           # SoilGrids API integration
+    A5 --> GM
+    A2 --> GEE
+    A3 --> GEE
+    A6 --> GEE
+    A4 --> SG
+    A7 --> MB
+    UI --> OM
 ```
 
-## Configuration
+### 🔄 How a field becomes a plan
 
-| Secret | Purpose |
-|--------|---------|
-| MAPBOX_TOKEN | Mapbox GL JS map rendering, geocoding, satellite tiles |
-| GEE_SERVICE_ACCOUNT_JSON | Google Earth Engine service account credentials (JSON key) |
-| GEE_PROJECT_ID | Google Cloud project ID with Earth Engine API enabled |
+```mermaid
+sequenceDiagram
+    actor F as 👨‍🌾 Farmer
+    participant M as 🗺️ Map
+    participant E as ⚡ Edge Functions
+    participant G as 🛰️ GEE / Gemini
+    participant P as 📊 Plan
 
-## Getting Started
+    F->>M: Draw field polygon
+    M->>E: Send coordinates
+    E->>G: NDVI + land use + soil + climate
+    G-->>E: Field signals
+    E-->>M: Analytics rendered
+    F->>M: Plan my crops
+    M->>E: Full field context
+    E->>G: Gemini 2.5 Pro reasoning
+    G-->>P: Zones, rotation, calendar, tips
+    P-->>F: Plan on map + PDF export
+```
+
+---
+
+## 🧰 Tech Stack
+
+| Layer | Tech | Why |
+|------|------|-----|
+| 🖥️ **Frontend** | React 18 · TypeScript 5 · Vite 5 | Type-safe and fast |
+| 🎨 **UI** | Tailwind CSS 3 · shadcn/ui · Radix | Beautiful + accessible |
+| 🗺️ **Mapping** | Mapbox GL JS 3 | Smooth 3D satellite rendering |
+| 📊 **Charts** | Recharts | NDVI, climate, soil, suitability visuals |
+| 🔄 **State** | TanStack React Query 5 | Smart caching, offline-friendly |
+| ⚡ **Backend** | Supabase Edge Functions (Deno) | Serverless, low latency |
+| 🛰️ **Satellite** | Google Earth Engine | Sentinel-2 · ESA WorldCover · SRTM · CHIRPS |
+| 🤖 **AI** | Gemini 2.5 Pro | Context-aware crop planning |
+| 🌦️ **Weather** | Open-Meteo | Forecast + 1-year archive + air quality |
+| 🪱 **Soil** | ISRIC SoilGrids | Global soil @ 250m |
+| 📄 **Export** | jsPDF | One-click crop plan PDF |
+
+---
+
+## 📁 Project Structure
+
+```
+AgriSense/
+├── 🖥️ src/
+│   ├── components/        # MapView · FieldDetailView · CropPlanningSection · WeatherView
+│   │   └── ui/            # shadcn/ui primitives
+│   ├── data/              # 50+ crop profiles · field types
+│   ├── hooks/             # mobile · swipe · toast
+│   ├── lib/               # language · backend callers · cache
+│   ├── pages/             # Index · NotFound
+│   └── integrations/      # supabase client
+├── ⚡ supabase/functions/ # 8 Deno edge functions
+├── 🌐 api/                # serverless API endpoints
+├── 🎨 public/             # logo · favicons · demo screenshots
+└── 🗄️ supabase/migrations/# database schema
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone & install
 
 ```bash
 git clone https://github.com/theyapguard/AgriSense.git
 cd AgriSense
 npm install
-npm run dev
 ```
 
-## Environment Variables
+### 2️⃣ Configure secrets
 
 ```env
-MAPBOX_TOKEN=
-GEE_SERVICE_ACCOUNT_JSON=
-GEE_PROJECT_ID=
+MAPBOX_TOKEN=               # Mapbox map + geocoding
+GEE_SERVICE_ACCOUNT_JSON=   # Google Earth Engine key
+GEE_PROJECT_ID=             # GCP project with EE enabled
+GEMINI_API_KEY=             # Gemini 2.5 Pro
 ```
 
-Open-Meteo and ISRIC SoilGrids are free public APIs that do not require API keys.
+> 🆓 **Open-Meteo** and **ISRIC SoilGrids** are free public APIs — no key needed.
 
-## Contributors
+### 3️⃣ Run
+
+```bash
+npm run dev                # frontend
+supabase functions serve   # edge functions
+```
+
+Open `http://localhost:5173` → draw a field → get your plan.
+
+---
+
+## 🌱 Impact — aligned with **Earth Forward**
+
+| UN SDG | How AgriSense helps |
+|--------|---------------------|
+| 🎯 **SDG 2** — Zero Hunger | Higher yields through smarter crop choices |
+| 💧 **SDG 6** — Clean Water | 26% water savings in the sample plan |
+| 🌍 **SDG 13** — Climate Action | Climate-resilient rotation planning |
+| 🌾 **SDG 12** — Responsible Production | Right crop, right place — less waste |
+
+AgriSense puts satellite intelligence in the hands of the people who need it most — small farmers, students, and communities — for free.
+
+---
+
+## 🏆 Built for NextStep Hacks 2026
+
+**Theme:** Earth Forward 🌍
+**Challenge:** sustainable agriculture + climate resilience through technology
+**Stack:** React · TypeScript · Google Earth Engine · Gemini 2.5 Pro · Mapbox · Supabase
+
+---
+
+## 👥 Contributors
 
 <a href="https://github.com/theyapguard/AgriSense/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=theyapguard/AgriSense" />
+  <img src="https://contrib.rocks/image?repo=theyapguard/AgriSense" alt="Contributors" />
 </a>
 
-## License
+---
 
-MIT
+## 📜 License
+
+[MIT](LICENSE) — free to use, learn from, and build on.
+
+<div align="center">
+
+**AgriSense** — because every field deserves a plan. 🌾
+
+<sub>Made with 🛰️, 🤖, and ❤️ for the Earth.</sub>
+
+</div>
