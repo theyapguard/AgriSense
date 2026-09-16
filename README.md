@@ -1,32 +1,42 @@
-# Virdis - Sorry for the issues lately, hopefully the fix will be there soon
+<p align="center">
+  <img src="public/agrisense-logo.svg" alt="AgriSense logo" width="140">
+</p>
 
-![React](https://img.shields.io/badge/React-18-000000?style=flat-square&logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-Build-646CFF?style=flat-square&logo=vite&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Framework-000000?style=flat-square&logo=tailwindcss)
-![Mapbox](https://img.shields.io/badge/Mapbox-GL_JS-000000?style=flat-square&logo=mapbox)
-![Supabase](https://img.shields.io/badge/Supabase-Backend-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
-![Gemini](https://img.shields.io/badge/Gemini-2.5_Pro-1A73E8?style=flat-square&logo=google)
-![EarthEngine](https://img.shields.io/badge/Google_Earth_Engine-Sentinel--2-4285F4?style=flat-square&logo=googleearth)
-![License](https://img.shields.io/badge/License-MIT-000000?style=flat-square)
+<h1 align="center">AgriSense</h1>
 
-Virdis is a satellite-powered agricultural and land analytics platform that combines Sentinel-2 satellite imagery, Google Earth Engine processing, real-time weather data, soil science databases, and AI-driven crop planning into a single web dashboard.
+<p align="center">
+  <strong>See your field's future from space.</strong>
+</p>
 
-Users draw polygonal regions on an interactive map and receive vegetation health analysis (NDVI), climate analytics, soil profiling, air quality data, land use classification, land suitability scoring, and AI-generated crop planning recommendations.
+<p align="center">
+  Satellite-driven field intelligence. Draw your land, sense its health, and plan your harvest — all in one dashboard.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/React-18-000000?style=flat-square&logo=react">
+  <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white">
+  <img src="https://img.shields.io/badge/Vite-Build-646CFF?style=flat-square&logo=vite&logoColor=white">
+  <img src="https://img.shields.io/badge/TailwindCSS-Framework-000000?style=flat-square&logo=tailwindcss">
+  <img src="https://img.shields.io/badge/Mapbox-GL_JS-000000?style=flat-square&logo=mapbox">
+  <img src="https://img.shields.io/badge/Supabase-Backend-3ECF8E?style=flat-square&logo=supabase&logoColor=white">
+  <img src="https://img.shields.io/badge/Gemini-2.5_Pro-1A73E8?style=flat-square&logo=google">
+  <img src="https://img.shields.io/badge/Google_Earth_Engine-Sentinel--2-4285F4?style=flat-square&logo=googleearth">
+  <img src="https://img.shields.io/badge/License-MIT-000000?style=flat-square">
+</p>
+
+---
+
+## What is AgriSense?
+
+AgriSense is a satellite-powered agricultural and land analytics platform that combines Sentinel-2 satellite imagery, Google Earth Engine processing, real-time weather data, soil science databases, and AI-driven crop planning into a single web dashboard.
+
+You draw polygonal regions on an interactive map. AgriSense tells you what's there, how healthy it is, and what to grow next — vegetation health (NDVI), climate analytics, soil profiling, air quality, land use classification, land suitability scoring, and AI-generated crop planning recommendations.
 
 ## Preview
 
-[![Open Virdis](https://img.shields.io/badge/Open-Virdis%20Live%20Site-006837?style=for-the-badge)](https://virdis.vercel.app)
+> <img src="public/agrisense-preview.png" alt="AgriSense Preview" width="100%">
 
-<br>
-
-> <a href="https://virdis.vercel.app">
->  <img src="public/project-virdis.png" alt="Virdis Preview" width="100%">
-> </a>
-
-## What Virdis Does
-
-Virdis enables users to:
+## What AgriSense Does
 
 - Map and manage regions on an interactive satellite map with polygon drawing tools
 - Monitor vegetation health using NDVI analysis from Sentinel-2 10m resolution imagery
@@ -49,11 +59,9 @@ Virdis enables users to:
 - Location search with Mapbox geocoding and reverse geocoding
 - Auto-detection of region type (rural vs urban) using GEE land use data
 
-
 ### NDVI Vegetation Analysis
 
-Sentinel-2 imagery is processed through Google Earth Engine to calculate the Normalized Difference Vegetation Index.
-This NDVI data is displayed as a semi-transparent raster layer above the satellite basemap,
+Sentinel-2 imagery is processed through Google Earth Engine to calculate the Normalized Difference Vegetation Index, displayed as a semi-transparent raster layer above the satellite basemap.
 
 NDVI = (NIR - Red) / (NIR + Red)
 
@@ -66,9 +74,7 @@ NDVI = (NIR - Red) / (NIR + Red)
 
 ### Climate Analytics Dashboard
 
-Per-region weather analysis with current conditions, precipitation trends (incl. evapotranspiration), temperature ranges, soil moisture (surface & deep), and selectable date range
-
-Air quality monitoring with AQI , PM2.5 levels, and color-coded indicators.
+Per-region weather analysis with current conditions, precipitation trends (incl. evapotranspiration), temperature ranges, soil moisture (surface & deep), and selectable date range. Air quality monitoring with AQI, PM2.5 levels, and color-coded indicators.
 
 ### Soil Health Profiling
 
@@ -76,7 +82,7 @@ Soil data fetched from the ISRIC SoilGrids REST API at 250m resolution:
 
 - Soil classification (WRB taxonomy) with descriptions and icons
 - pH measurement with rating
-- Organic carbon content 
+- Organic carbon content
 - Total nitrogen content
 - Cation exchange capacity (CEC)
 - Bulk density
@@ -84,7 +90,7 @@ Soil data fetched from the ISRIC SoilGrids REST API at 250m resolution:
 - Soil composition (sand, silt, clay percentages) with USDA texture class
 - Water retention: field capacity, wilting point, available water capacity
 - Donut chart to visualize soil composition
-  
+
 ### Land Use Classification
 
 ESA WorldCover 10m land cover classification via Google Earth Engine:
@@ -96,7 +102,7 @@ ESA WorldCover 10m land cover classification via Google Earth Engine:
 
 ### Land Suitability Scoring
 
-Radar chart of six land suitability metrics :
+Radar chart of six land suitability metrics:
 
 - Soil quality (from SoilGrids data)
 - Water access (rainfall and soil moisture)
@@ -105,30 +111,23 @@ Radar chart of six land suitability metrics :
 - Drainage assessment
 - Nutrient level scoring
 
-
 ### AI Crop Planning
 
 Dual-approach crop planning system:
 
-**Local Agronomy Model**
+**Local Agronomy Model** — a client-side scoring engine with 50+ crop profiles that runs immediately:
 
-A client-side scoring engine with 50+ crop profiles that runs immediately:
-
-- Detects climate region from location text (tropical, Mediterranean, temperate, arid, continental, highland, coastal, humid, subtropical)
-- Scores each crop against field signals: temperature, rainfall, soil pH, NDVI health, water index, humidity, soil quality, climate quality, topography
-- Allocates area proportionally to suitability scores (best crop gets 40-55%, not equal splitting)
+- Detects climate region from location text
+- Scores each crop against field signals: temperature, rainfall, soil pH, NDVI health, water index, humidity, topography
+- Allocates area proportionally to suitability scores
 - Generates intercropping pairs and 3-season rotation plans
-- Penalizes crops that do not match the detected climate region
 
-**Planner (Background)**
-
-Calls Google Gemini 2.5 Pro with full field context (NDVI, soil, weather, suitability, land use data). The AI response replaces the local model when available.
+**Planner (Background)** — calls Google Gemini 2.5 Pro with full field context; the AI response replaces the local model when available.
 
 **Crop Visualization**
 
 - Satellite minimap showing the field boundary on Mapbox satellite imagery
-- Static dot grid fills the entire field polygon with crop markers using point-in-polygon testing
-- Variable dot sizes: trees get 16px dots, small grains get 7px
+- Static dot grid fills the field polygon with crop markers using point-in-polygon testing
 - Color-coded legend with crop filtering (click to show/hide individual crops)
 
 **Plan Outputs**
@@ -142,7 +141,7 @@ Calls Google Gemini 2.5 Pro with full field context (NDVI, soil, weather, suitab
 
 ### Edge Case Detection
 
-The system detects unsuitable regions and blocks crop planning:
+AgriSense detects unsuitable regions and blocks crop planning:
 
 | Edge Case | Detection Method | Threshold |
 |-----------|-----------------|-----------|
@@ -158,7 +157,6 @@ The system detects unsuitable regions and blocks crop planning:
 - Selectable comparison target from existing regions
 - Independent chart rendering per region
 
-
 ## Architecture
 
 ```
@@ -171,28 +169,19 @@ React + Mapbox GL JS + Tailwind + shadcn
       ▼
 Edge Functions (Supabase - Deno)
       │
- ┌───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────┐
- ▼               ▼               ▼               ▼               ▼               ▼               
-Mapbox Token   Field Analysis   Land Analytics  NDVI Tiles      NDVI Series     Soil Data
-(Mapbox API)   (GEE + AI)       (GEE)           (GEE)           (GEE)           (SoilGrids)
-                   │               │               │               │               │
-                   ▼               ▼               ▼               ▼               ▼
-             AI Crop Planning   Land Use        Tile Service    Time-Series     Soil Properties
-             (Gemini 2.5 Pro)   + Suitability                                   (250m)
-                   │
-                   ▼
-            Crop Recommendations
-
+ ┌───────────────┬───────────────┬──────────────┬──────────────┬─────────────┬─────────────┐
+ ▼               ▼               ▼               ▼              ▼             ▼
+Mapbox Token   Field Analysis   Land Analytics  NDVI Tiles     NDVI Series   Soil Data
+(Mapbox API)   (GEE + AI)       (GEE)           (GEE)          (GEE)         (SoilGrids)
       │
       ▼
 External Data Sources
       │
  ┌───────────────┬───────────────┬───────────────┬───────────────┐
  ▼               ▼               ▼               ▼               ▼
-Google Earth    Open-Meteo     SoilGrids       Mapbox         Sentinel-2 
+Google Earth    Open-Meteo     SoilGrids       Mapbox         Sentinel-2
 Engine          (Weather)      (Soil Data)     (Maps API)    ESA WorldCover
-                                                              SRTM • CHIRPS
-
+                                                             SRTM • CHIRPS
 ```
 
 ## Tech Stack
@@ -237,7 +226,7 @@ Engine          (Weather)      (Soil Data)     (Maps API)    ESA WorldCover
 
 | Source | Endpoint | Data Provided | Usage |
 |--------|----------|---------------|-------|
-| ISRIC SoilGrids | REST API at 250m resolution | pH, organic carbon, nitrogen, bulk density, CEC, sand/silt/clay texture, coarse fragments, water retention (field capacity, wilting point, available water) | Soil health profiling, texture pie chart, crop suitability input |
+| ISRIC SoilGrids | REST API at 250m resolution | pH, organic carbon, nitrogen, bulk density, CEC, sand/silt/clay texture, coarse fragments, water retention | Soil health profiling, texture pie chart, crop suitability input |
 
 ### Mapping and Geocoding
 
@@ -265,7 +254,7 @@ Engine          (Weather)      (Soil Data)     (Maps API)    ESA WorldCover
 | crop-planning | POST | field name, crop, area, location, coordinates, NDVI/soil/weather/suitability data | zones, intercropping, rotation_plan, summary, tips, scores | Gemini 2.5 Pro |
 | keepalive | GET | (none) | { status: "ok" } | (none) |
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -321,11 +310,11 @@ supabase/functions/
 | GEE_SERVICE_ACCOUNT_JSON | Google Earth Engine service account credentials (JSON key) |
 | GEE_PROJECT_ID | Google Cloud project ID with Earth Engine API enabled |
 
-## Installation
+## Getting Started
 
 ```bash
-git clone https://github.com/your-org/virdis
-cd virdis
+git clone https://github.com/theyapguard/AgriSense.git
+cd AgriSense
 npm install
 npm run dev
 ```
@@ -342,12 +331,10 @@ Open-Meteo and ISRIC SoilGrids are free public APIs that do not require API keys
 
 ## Contributors
 
-<a href="https://github.com/thanas-r/virdis/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=thanas-r/virdis" />
+<a href="https://github.com/theyapguard/AgriSense/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=theyapguard/AgriSense" />
 </a>
 
 ## License
-```
-GNU AFFERO GENERAL PUBLIC LICENSE
-   Version 3, 19 November 2007
-```
+
+MIT

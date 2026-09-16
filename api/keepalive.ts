@@ -29,7 +29,7 @@ serve(async (req) => {
     JSON.stringify({ 
       status: "alive", 
       timestamp: new Date().toISOString(),
-      service: "virdis-keepalive"
+      service: "agrisense-keepalive"
     }),
     { 
       status: 200, 

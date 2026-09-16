@@ -1,6 +1,6 @@
 {
-  "name": "Virdis",
-  "short_name": "Virdis",
+  "name": "AgriSense",
+  "short_name": "AgriSense",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#1C2A24",
+  "background_color": "#1C2A24",
   "display": "standalone"
 }
